@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+
+     let doanhso= parseInt(prompt("Nhap doanh so ban hang: "));
+     if (doanhso >=400000)
+     {
+         let thuong=(doanhso*10)/100;
+         alert("Duoc thuong hoa hong 10% " +thuong);
+     }else if (doanhso < 400000 && doanhso >100000)
+     {
+         let thuong1=(doanhso*5)/100;
+         alert("Duoc thuong hoa hong 5% " +thuong1);
+     }else
+         {
+           alert("Khong duoc thuong ");
+         }
+ </script>
+</body>
+</html>

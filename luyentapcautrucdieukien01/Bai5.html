@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let diemgiuaky=parseInt(prompt("Nhap diem giua thi giua ky:"));
+      let diemthicuoiky=parseInt(prompt("Nhap diem thi cuoi ky:"));
+      let diemtongket=Math.round(((diemthicuoiky*2)+diemgiuaky)/3);
+
+
+      if (diemtongket>=8)
+      {
+
+          alert(diemtongket+" Xep loai gioi:");
+      }else if (diemtongket<8 && diemtongket >= 6)
+      {
+          alert(diemtongket+" Xep loai Kha");
+      }else if(diemtongket<6 && diemtongket >=4)
+      {
+          alert(diemtongket+" Xep loai trung binh");
+      }else
+      {
+          alert(diemtongket+"Xep loai Yeu");
+      }
+  </script>
+</body>
+</html>

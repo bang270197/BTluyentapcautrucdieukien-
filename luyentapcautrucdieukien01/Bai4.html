@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>so thu nhat</p><input type="text"  id="soa">
+<p>so thu hai</p><input type="text" id="sob">
+<p>so thu ba</p><input type="text" id="soc">
+<input type="button" value="Thuc hien" onclick="thuchien();">
+<script>
+    function thuchien() {
+        let soa=document.getElementById('soa').value;
+        let sob=document.getElementById('sob').value;
+        let soc=document.getElementById('soc').value;
+        if(soa >sob)
+        {
+            if (soa>soc)
+            {
+                alert(soa+ " La so lon nhat");
+            }else
+            {
+                alert(soc + "la so lon nhat");
+            }
+        }else
+        {
+            if (sob >soc)
+            {
+                alert(sob +'La so lon nhat');
+            }else
+            {
+                alert(soc + 'la so lon nhat');
+            }
+        }
+    }
+    /**/
+</script>
+</body>
+</html>
